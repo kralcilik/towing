@@ -60,17 +60,17 @@ picFrame.addEventListener('click', (e) => {
   //   (Number(window.innerHeight) - Number(picShown.clientHeight)) / 2
   // }px`;
   // picShown.style.marginTop = marginTop2;
-  if (window.innerWidth <= 600) {
-    picShown.style.top = '0px';
-    picShown.style.marginTop = '0px';
-    picShown.style.top = `${(window.innerHeight - picShown.height) / 2}px`;
-    console.log((window.innerHeight - picShown.offsetHeight) / 2);
-  } else {
-    picShown.style.top = `${
-      (window.innerHeight - picShown.clientHeight) / 2
-    }px`;
-    console.log((window.innerHeight - picShown.clientHeight) / 2);
-  }
+  // if (window.innerWidth <= 600) {
+  //   picShown.style.top = '0px';
+  //   picShown.style.marginTop = '0px';
+  //   picShown.style.top = `${(window.innerHeight - picShown.height) / 2}px`;
+  //   console.log((window.innerHeight - picShown.offsetHeight) / 2);
+  // } else {
+  //   picShown.style.top = `${
+  //     (window.innerHeight - picShown.clientHeight) / 2
+  //   }px`;
+  //   console.log((window.innerHeight - picShown.clientHeight) / 2);
+  // }
 
   pics.forEach((pic, index) => {
     if (pic.currentSrc === e.target.src) picIndex = index;
@@ -111,29 +111,29 @@ const changePic = (str) => {
       newSrc = pics[picIndex - 1].currentSrc;
       picIndex--;
       picShown.src = newSrc;
-      if (window.innerWidth <= 600) {
-        picShown.style.top = `${
-          (window.innerHeight - picShown.clientHeight) / 2
-        }px`;
-      } else {
-        picShown.style.top = `${
-          (window.innerHeight - picShown.clientHeight) / 2
-        }px`;
-      }
+      // if (window.innerWidth <= 600) {
+      //   picShown.style.top = `${
+      //     (window.innerHeight - picShown.clientHeight) / 2
+      //   }px`;
+      // } else {
+      //   picShown.style.top = `${
+      //     (window.innerHeight - picShown.clientHeight) / 2
+      //   }px`;
+      // }
       //   photoDesc.innerText = pics[picIndex].alt;
     } else {
       newSrc = pics[pics.length - 1].currentSrc;
       picIndex = pics.length - 1;
       picShown.src = newSrc;
-      if (window.innerWidth <= 600) {
-        picShown.style.top = `${
-          (window.innerHeight - picShown.clientHeight) / 2
-        }px`;
-      } else {
-        picShown.style.top = `${
-          (window.innerHeight - picShown.clientHeight) / 2
-        }px`;
-      }
+      // if (window.innerWidth <= 600) {
+      //   picShown.style.top = `${
+      //     (window.innerHeight - picShown.clientHeight) / 2
+      //   }px`;
+      // } else {
+      //   picShown.style.top = `${
+      //     (window.innerHeight - picShown.clientHeight) / 2
+      //   }px`;
+      // }
       //   photoDesc.innerText = pics[picIndex].alt;
     }
   } else if (str === 'right') {
@@ -141,15 +141,15 @@ const changePic = (str) => {
       newSrc = pics[picIndex + 1].currentSrc;
       picIndex++;
       picShown.src = newSrc;
-      if (window.innerWidth <= 600) {
-        picShown.style.top = `${
-          (window.innerHeight - picShown.clientHeight) / 2
-        }px`;
-      } else {
-        picShown.style.top = `${
-          (window.innerHeight - picShown.clientHeight) / 2
-        }px`;
-      }
+      // if (window.innerWidth <= 600) {
+      //   picShown.style.top = `${
+      //     (window.innerHeight - picShown.clientHeight) / 2
+      //   }px`;
+      // } else {
+      //   picShown.style.top = `${
+      //     (window.innerHeight - picShown.clientHeight) / 2
+      //   }px`;
+      // }
       //   photoDesc.innerText = pics[picIndex].alt;
     } else {
       newSrc = pics[0].currentSrc;
