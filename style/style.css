@@ -960,7 +960,6 @@ a {
 .picAndButtons {
   width: 100vw;
   height: 100vh;
-  position: relative;
   top: 0;
   left: 0;
 }
@@ -968,7 +967,6 @@ a {
   background-color: #011017;
   width: 100vw;
   height: 100vh;
-  position: relative;
   top: 0;
   left: 0;
   display: flex;
