@@ -971,14 +971,18 @@ a {
   position: relative;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #pic-shown {
-  display: flex;
+  /* display: inline-block;
   top: 0;
   left: 0;
   position: absolute;
+  margin-left: 10vw; */
   width: 80vw;
-  margin-left: 10vw;
+
   /* top: 20vw; */
 }
 #close-btn {
