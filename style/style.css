@@ -973,7 +973,7 @@ a {
   left: 0;
 }
 #pic-shown {
-  display: inline-block;
+  display: flex;
   top: 0;
   left: 0;
   position: absolute;
